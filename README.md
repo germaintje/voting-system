@@ -118,6 +118,7 @@ After you have used the network.sh startup command, you can deploy the chaincode
 
 ```
 ./network.sh deployCC -ccn egg-tracking -ccp [base-folder]/voting-system/chaincode -ccv 1 -ccs 1 -ccl javascript
+./network.sh deployCC -ccn egg-tracking -ccp /Users/germain/projects/BLOCKCHAIN/ARCHITECTURE/voting-system/chaincode -ccv 1 -ccs 1 -ccl javascript 
 ```
 
 Where [base-folder] is the location where you cloned this project, egg-tracking is the name of the chaincode, the parameter -ccl javascript is the language used to write the chaincode. This example was built with javascript. The parameter -ccv 1 and -ccs 1 refers to the version and sequence. If you change something in your chaincode and wants to redeploy, you should increment these values.
@@ -148,6 +149,7 @@ Our client programs are using the test-network connection profile to connect to 
 
 ```
 export FABRIC_PATH=~/fabric-samples
+export FABRIC_PATH=~/go/src/github.com/germaintje/fabric-samples
 ```
 
 ### Adding the first user to the wallet
